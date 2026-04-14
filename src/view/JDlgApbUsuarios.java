@@ -22,9 +22,9 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
     }
     
     public void habilitar(){
-    jTxtCodigo.setEnabled(true);
+    jTxtApbCodigo.setEnabled(true);
     jTxtNome.setEnabled(true);
-    jTxtApelido.setEnabled(true);
+    jTxtApbApelido.setEnabled(true);
     jFmtCpf.setEnabled(true);
     jFmtDataNascimento.setEnabled(true);
     jCboNivel.setEnabled(true);
@@ -39,9 +39,9 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
     }
     
     public void desabilitar(){
-        jTxtCodigo.setEnabled(false);
+        jTxtApbCodigo.setEnabled(false);
         jTxtNome.setEnabled(false);
-        jTxtApelido.setEnabled(false);
+        jTxtApbApelido.setEnabled(false);
         jFmtCpf.setEnabled(false);
         jFmtDataNascimento.setEnabled(false);
         jCboNivel.setEnabled(false);
@@ -69,9 +69,9 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jTxtNome = new javax.swing.JTextField();
-        jTxtApelido = new javax.swing.JTextField();
+        jTxtApbApelido = new javax.swing.JTextField();
         jLbCodigo = new javax.swing.JLabel();
-        jTxtCodigo = new javax.swing.JTextField();
+        jTxtApbCodigo = new javax.swing.JTextField();
         jLbCpf = new javax.swing.JLabel();
         jFmtCpf = new javax.swing.JFormattedTextField();
         jLbDataNascimento = new javax.swing.JLabel();
@@ -102,9 +102,9 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
 
         jLbCodigo.setText("Codigo");
 
-        jTxtCodigo.addActionListener(new java.awt.event.ActionListener() {
+        jTxtApbCodigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtCodigoActionPerformed(evt);
+                jTxtApbCodigoActionPerformed(evt);
             }
         });
 
@@ -199,7 +199,7 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLbCodigo)
-                                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTxtApbCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 201, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -232,7 +232,7 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
                                 .addGap(18, 18, 18)
                                 .addComponent(jCboNivel, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTxtApbApelido, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
@@ -245,7 +245,7 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
                     .addComponent(jLabel1))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jTxtNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -253,7 +253,7 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
                     .addComponent(jLabel2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTxtApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbApelido, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -305,9 +305,9 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
         habilitar();
     }//GEN-LAST:event_jBtnIncluirActionPerformed
 
-    private void jTxtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCodigoActionPerformed
+    private void jTxtApbCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbCodigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtCodigoActionPerformed
+    }//GEN-LAST:event_jTxtApbCodigoActionPerformed
 
     private void jFmtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtCpfActionPerformed
         // TODO add your handling code here:
@@ -387,8 +387,8 @@ public class JDlgApbUsuarios extends javax.swing.JDialog {
     private javax.swing.JLabel jLbNivel;
     private javax.swing.JLabel jLbSenha;
     private javax.swing.JPasswordField jPwfSenha;
-    private javax.swing.JTextField jTxtApelido;
-    private javax.swing.JTextField jTxtCodigo;
+    private javax.swing.JTextField jTxtApbApelido;
+    private javax.swing.JTextField jTxtApbCodigo;
     private javax.swing.JTextField jTxtNome;
     // End of variables declaration//GEN-END:variables
 }
