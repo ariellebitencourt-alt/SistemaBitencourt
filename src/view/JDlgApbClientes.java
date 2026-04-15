@@ -27,51 +27,130 @@ public class JDlgApbClientes extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLbCodigo = new javax.swing.JLabel();
-        jTxtCodigo = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jTxtNome = new javax.swing.JTextField();
-        jLbCpf = new javax.swing.JLabel();
-        jFmtCpf = new javax.swing.JFormattedTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jTxtEmai = new javax.swing.JTextField();
-        jLabel3 = new javax.swing.JLabel();
+        jButton4 = new javax.swing.JButton();
+        jLbApbCodigo = new javax.swing.JLabel();
+        jTxtApbCodigo = new javax.swing.JTextField();
+        jLbApbNome = new javax.swing.JLabel();
+        jTxtApbNome = new javax.swing.JTextField();
+        jLbApbCpf = new javax.swing.JLabel();
+        jFmtApbCpf = new javax.swing.JFormattedTextField();
+        jLbApbEmail = new javax.swing.JLabel();
+        jTxtApbEmai = new javax.swing.JTextField();
+        jLbApbTelefone = new javax.swing.JLabel();
+        jTxtApbTelefone = new javax.swing.JTextField();
+        jLbApbEndereco = new javax.swing.JLabel();
+        jTxtApbEndereco = new javax.swing.JTextField();
+        jLbAPbDataNascimento = new javax.swing.JLabel();
+        jFmtApbDataNascimento = new javax.swing.JFormattedTextField();
+        jLbApbCidade = new javax.swing.JLabel();
+        jTxtApbCidade = new javax.swing.JTextField();
+        jLbApbCep = new javax.swing.JLabel();
+        jFmtApbCep = new javax.swing.JFormattedTextField();
+        jFmtApbUltimoLogin = new javax.swing.JFormattedTextField();
+        jLbApbUltimoLogin = new javax.swing.JLabel();
+        jLbApbDataCadastro = new javax.swing.JLabel();
+        jFmtApbDataCadastro = new javax.swing.JFormattedTextField();
+        jlbApbLimiteCredito = new javax.swing.JLabel();
+        jFmtApbLimiteLimiteCredito = new javax.swing.JFormattedTextField();
+        jLbApbGenero = new javax.swing.JLabel();
+        jCboApbGenero = new javax.swing.JComboBox<>();
+        jLbApbClientePremium = new javax.swing.JLabel();
+        jTxtApbClientePremium = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jButton6 = new javax.swing.JButton();
+
+        jButton4.setText("jButton4");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLbCodigo.setText("Codigo");
+        jLbApbCodigo.setText("Codigo");
 
-        jTxtCodigo.addActionListener(new java.awt.event.ActionListener() {
+        jTxtApbCodigo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtCodigoActionPerformed(evt);
+                jTxtApbCodigoActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Nome");
+        jLbApbNome.setText("Nome");
 
-        jTxtNome.addActionListener(new java.awt.event.ActionListener() {
+        jTxtApbNome.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtNomeActionPerformed(evt);
+                jTxtApbNomeActionPerformed(evt);
             }
         });
 
-        jLbCpf.setText("CPF");
+        jLbApbCpf.setText("CPF");
 
-        jFmtCpf.addActionListener(new java.awt.event.ActionListener() {
+        jFmtApbCpf.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFmtCpfActionPerformed(evt);
+                jFmtApbCpfActionPerformed(evt);
             }
         });
 
-        jLabel2.setText("Email");
+        jLbApbEmail.setText("Email");
 
-        jTxtEmai.addActionListener(new java.awt.event.ActionListener() {
+        jTxtApbEmai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTxtEmaiActionPerformed(evt);
+                jTxtApbEmaiActionPerformed(evt);
             }
         });
 
-        jLabel3.setText("jLabel3");
+        jLbApbTelefone.setText("Telefone");
+
+        jTxtApbTelefone.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTxtApbTelefoneActionPerformed(evt);
+            }
+        });
+
+        jLbApbEndereco.setText("Endereco");
+
+        jLbAPbDataNascimento.setText("Data de Nascimento");
+
+        jLbApbCidade.setText("Cidade");
+
+        jTxtApbCidade.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTxtApbCidadeActionPerformed(evt);
+            }
+        });
+
+        jLbApbCep.setText("Cep");
+
+        jLbApbUltimoLogin.setText("Ultimo Login");
+
+        jLbApbDataCadastro.setText("Data Cadastro ");
+
+        jlbApbLimiteCredito.setText("Limite Credito");
+
+        jLbApbGenero.setText("Genero");
+
+        jCboApbGenero.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        jCboApbGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCboApbGeneroActionPerformed(evt);
+            }
+        });
+
+        jLbApbClientePremium.setText("Cliente Premium");
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jButton1.setText("Incluir");
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jButton2.setText("Alterar");
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jButton3.setText("Excluir");
+
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jButton5.setText("Confirmar");
+
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jButton6.setText("Pesquisar");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -79,68 +158,180 @@ public class JDlgApbClientes extends javax.swing.JDialog {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jTxtEmai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLbCodigo)
-                            .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
                             .addGroup(layout.createSequentialGroup()
+                                .addComponent(jLbApbCodigo)
+                                .addGap(35, 35, 35)
+                                .addComponent(jLbApbNome))
+                            .addComponent(jLbApbEmail)
+                            .addComponent(jTxtApbEmai, javax.swing.GroupLayout.PREFERRED_SIZE, 129, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(123, 123, 123)
+                                .addComponent(jLbApbCpf)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLbAPbDataNascimento))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
-                                    .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jTxtApbTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLbApbTelefone))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLbCpf)
-                                    .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 142, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                .addGap(0, 137, Short.MAX_VALUE))
+                                    .addComponent(jTxtApbEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLbApbEndereco))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLbApbCidade)
+                                    .addComponent(jTxtApbCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jCboApbGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jTxtApbClientePremium, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jTxtApbCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(jTxtApbNome, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(12, 12, 12)
+                            .addComponent(jFmtApbCpf, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGap(18, 18, 18)
+                            .addComponent(jFmtApbDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jFmtApbCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jLbApbCep)
+                                        .addComponent(jLbApbGenero))
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jFmtApbUltimoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jLbApbUltimoLogin))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLbApbDataCadastro)
+                                            .addGap(35, 35, 35)
+                                            .addComponent(jlbApbLimiteCredito))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGap(20, 20, 20)
+                                            .addComponent(jLbApbClientePremium))
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(158, 158, 158)
+                                                    .addComponent(jFmtApbDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                .addGroup(layout.createSequentialGroup()
+                                                    .addGap(166, 166, 166)
+                                                    .addComponent(jButton3)))
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(jFmtApbLimiteLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(jButton5)))))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton1)
+                                    .addGap(18, 18, 18)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGap(7, 7, 7)
+                            .addComponent(jButton6))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLbApbCodigo)
+                        .addComponent(jLbApbNome)
+                        .addComponent(jLbApbCpf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLbCpf))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jLbCodigo)
-                        .addComponent(jLabel1)))
+                        .addComponent(jLbAPbDataNascimento, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jFmtCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jTxtNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jTxtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jFmtApbCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jFmtApbDataNascimento, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTxtApbCodigo, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jTxtApbNome, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLbApbEmail, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLbApbEndereco, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLbApbCidade)
+                    .addComponent(jLbApbTelefone, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTxtApbEmai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbCidade))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLbApbCep)
+                    .addComponent(jLbApbUltimoLogin)
+                    .addComponent(jLbApbDataCadastro)
+                    .addComponent(jlbApbLimiteCredito))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jFmtApbCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtApbUltimoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtApbDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jFmtApbLimiteLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLbApbGenero)
+                    .addComponent(jLbApbClientePremium))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jCboApbGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTxtApbClientePremium, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2)
-                    .addComponent(jLabel3))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jTxtEmai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 200, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(65, 65, 65))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton6)
+                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton3)
+                            .addComponent(jButton2))
+                        .addGap(74, 74, 74))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTxtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtNomeActionPerformed
+    private void jTxtApbNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbNomeActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtNomeActionPerformed
+    }//GEN-LAST:event_jTxtApbNomeActionPerformed
 
-    private void jFmtCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtCpfActionPerformed
+    private void jFmtApbCpfActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtApbCpfActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jFmtCpfActionPerformed
+    }//GEN-LAST:event_jFmtApbCpfActionPerformed
 
-    private void jTxtCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtCodigoActionPerformed
+    private void jTxtApbCodigoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbCodigoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtCodigoActionPerformed
+    }//GEN-LAST:event_jTxtApbCodigoActionPerformed
 
-    private void jTxtEmaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtEmaiActionPerformed
+    private void jTxtApbEmaiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbEmaiActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTxtEmaiActionPerformed
+    }//GEN-LAST:event_jTxtApbEmaiActionPerformed
+
+    private void jTxtApbTelefoneActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbTelefoneActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTxtApbTelefoneActionPerformed
+
+    private void jTxtApbCidadeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTxtApbCidadeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTxtApbCidadeActionPerformed
+
+    private void jCboApbGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCboApbGeneroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCboApbGeneroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,14 +376,39 @@ public class JDlgApbClientes extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JFormattedTextField jFmtCpf;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLbCodigo;
-    private javax.swing.JLabel jLbCpf;
-    private javax.swing.JTextField jTxtCodigo;
-    private javax.swing.JTextField jTxtEmai;
-    private javax.swing.JTextField jTxtNome;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JComboBox<String> jCboApbGenero;
+    private javax.swing.JFormattedTextField jFmtApbCep;
+    private javax.swing.JFormattedTextField jFmtApbCpf;
+    private javax.swing.JFormattedTextField jFmtApbDataCadastro;
+    private javax.swing.JFormattedTextField jFmtApbDataNascimento;
+    private javax.swing.JFormattedTextField jFmtApbLimiteLimiteCredito;
+    private javax.swing.JFormattedTextField jFmtApbUltimoLogin;
+    private javax.swing.JLabel jLbAPbDataNascimento;
+    private javax.swing.JLabel jLbApbCep;
+    private javax.swing.JLabel jLbApbCidade;
+    private javax.swing.JLabel jLbApbClientePremium;
+    private javax.swing.JLabel jLbApbCodigo;
+    private javax.swing.JLabel jLbApbCpf;
+    private javax.swing.JLabel jLbApbDataCadastro;
+    private javax.swing.JLabel jLbApbEmail;
+    private javax.swing.JLabel jLbApbEndereco;
+    private javax.swing.JLabel jLbApbGenero;
+    private javax.swing.JLabel jLbApbNome;
+    private javax.swing.JLabel jLbApbTelefone;
+    private javax.swing.JLabel jLbApbUltimoLogin;
+    private javax.swing.JTextField jTxtApbCidade;
+    private javax.swing.JTextField jTxtApbClientePremium;
+    private javax.swing.JTextField jTxtApbCodigo;
+    private javax.swing.JTextField jTxtApbEmai;
+    private javax.swing.JTextField jTxtApbEndereco;
+    private javax.swing.JTextField jTxtApbNome;
+    private javax.swing.JTextField jTxtApbTelefone;
+    private javax.swing.JLabel jlbApbLimiteCredito;
     // End of variables declaration//GEN-END:variables
 }
