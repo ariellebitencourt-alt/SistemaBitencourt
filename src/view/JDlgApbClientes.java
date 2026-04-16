@@ -4,6 +4,8 @@
  */
 package view;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author u11174571179
@@ -16,6 +18,55 @@ public class JDlgApbClientes extends javax.swing.JDialog {
     public JDlgApbClientes(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
+        setTitle("Cadastro");
+        setLocationRelativeTo(null);
+        desabilitar();
+    }
+    public void habilitar(){
+        jTxtApbCodigo.setEnabled(true);
+        jTxtApbNome.setEnabled(true);
+        jFmtApbCpf.setEnabled(true);
+        jFmtApbDataNascimento.setEnabled(true);
+        jTxtApbEmai.setEnabled(true);
+        jTxtApbTelefone.setEnabled(true);
+        jTxtApbEndereco.setEnabled(true);
+        jTxtApbCidade.setEnabled(true);
+        jFmtApbCep.setEnabled(true);
+        jFmtApbUltimoLogin.setEnabled(true);
+        jFmtApbDataCadastro.setEnabled(true);
+        jFmtApbLimiteCredito.setEnabled(true);
+        jCboApbGenero.setEnabled(true);
+        jTxtApbClientePremium.setEnabled(true);
+        jBtnApbConfirmar.setEnabled(true);
+        jBtnApbCancelar.setEnabled(true);
+        jBtnApbIncluir.setEnabled(false);
+        jBtnApbAlterar.setEnabled(false);
+        jBtnApbPesquisar.setEnabled(false);
+        jBtnApbExcluir.setEnabled(false);
+        
+    }
+    
+    public void desabilitar(){
+        jTxtApbCodigo.setEnabled(false);
+        jTxtApbNome.setEnabled(false);
+        jFmtApbCpf.setEnabled(false);
+        jFmtApbDataNascimento.setEnabled(false);
+        jTxtApbEmai.setEnabled(false);
+        jTxtApbTelefone.setEnabled(false);
+        jTxtApbEndereco.setEnabled(false);
+        jTxtApbCidade.setEnabled(false);
+        jFmtApbCep.setEnabled(false);
+        jFmtApbUltimoLogin.setEnabled(false);
+        jFmtApbDataCadastro.setEnabled(false);
+        jFmtApbLimiteCredito.setEnabled(false);
+        jCboApbGenero.setEnabled(false);
+        jTxtApbClientePremium.setEnabled(false);
+        jBtnApbConfirmar.setEnabled(false);
+        jBtnApbCancelar.setEnabled(false);
+        jBtnApbIncluir.setEnabled(true);
+        jBtnApbAlterar.setEnabled(true);
+        jBtnApbPesquisar.setEnabled(true);
+        jBtnApbExcluir.setEnabled(true);
     }
 
     /**
@@ -51,16 +102,17 @@ public class JDlgApbClientes extends javax.swing.JDialog {
         jLbApbDataCadastro = new javax.swing.JLabel();
         jFmtApbDataCadastro = new javax.swing.JFormattedTextField();
         jlbApbLimiteCredito = new javax.swing.JLabel();
-        jFmtApbLimiteLimiteCredito = new javax.swing.JFormattedTextField();
+        jFmtApbLimiteCredito = new javax.swing.JFormattedTextField();
         jLbApbGenero = new javax.swing.JLabel();
         jCboApbGenero = new javax.swing.JComboBox<>();
         jLbApbClientePremium = new javax.swing.JLabel();
         jTxtApbClientePremium = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        jBtnApbIncluir = new javax.swing.JButton();
+        jBtnApbAlterar = new javax.swing.JButton();
+        jBtnApbExcluir = new javax.swing.JButton();
+        jBtnApbConfirmar = new javax.swing.JButton();
+        jBtnApbPesquisar = new javax.swing.JButton();
+        jBtnApbCancelar = new javax.swing.JButton();
 
         jButton4.setText("jButton4");
 
@@ -143,20 +195,53 @@ public class JDlgApbClientes extends javax.swing.JDialog {
 
         jLbApbClientePremium.setText("Cliente Premium");
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
-        jButton1.setText("Incluir");
+        jBtnApbIncluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/incluir.png"))); // NOI18N
+        jBtnApbIncluir.setText("Incluir");
+        jBtnApbIncluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbIncluirActionPerformed(evt);
+            }
+        });
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
-        jButton2.setText("Alterar");
+        jBtnApbAlterar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/alterar.png"))); // NOI18N
+        jBtnApbAlterar.setText("Alterar");
+        jBtnApbAlterar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbAlterarActionPerformed(evt);
+            }
+        });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
-        jButton3.setText("Excluir");
+        jBtnApbExcluir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Excluir.png"))); // NOI18N
+        jBtnApbExcluir.setText("Excluir");
+        jBtnApbExcluir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbExcluirActionPerformed(evt);
+            }
+        });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
-        jButton5.setText("Confirmar");
+        jBtnApbConfirmar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/confirmar.png"))); // NOI18N
+        jBtnApbConfirmar.setText("Confirmar");
+        jBtnApbConfirmar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbConfirmarActionPerformed(evt);
+            }
+        });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
-        jButton6.setText("Pesquisar");
+        jBtnApbPesquisar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/pesquisar.png"))); // NOI18N
+        jBtnApbPesquisar.setText("Pesquisar");
+        jBtnApbPesquisar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbPesquisarActionPerformed(evt);
+            }
+        });
+
+        jBtnApbCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/cancelar.png"))); // NOI18N
+        jBtnApbCancelar.setText("Cancelar");
+        jBtnApbCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBtnApbCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -165,15 +250,17 @@ public class JDlgApbClientes extends javax.swing.JDialog {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jBtnApbIncluir)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(jBtnApbAlterar, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnApbExcluir)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnApbConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jBtnApbCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton5)
-                        .addGap(18, 18, 18)
-                        .addComponent(jButton6))
+                        .addComponent(jBtnApbPesquisar))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -243,7 +330,7 @@ public class JDlgApbClientes extends javax.swing.JDialog {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                         .addComponent(jFmtApbDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(jFmtApbLimiteLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                        .addComponent(jFmtApbLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -279,7 +366,6 @@ public class JDlgApbClientes extends javax.swing.JDialog {
                             .addComponent(jTxtApbEmai, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTxtApbTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jTxtApbEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLbApbCep)
                     .addComponent(jLbApbUltimoLogin)
@@ -290,7 +376,7 @@ public class JDlgApbClientes extends javax.swing.JDialog {
                     .addComponent(jFmtApbCep, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtApbUltimoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jFmtApbDataCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jFmtApbLimiteLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jFmtApbLimiteCredito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLbApbGenero)
@@ -301,11 +387,12 @@ public class JDlgApbClientes extends javax.swing.JDialog {
                     .addComponent(jTxtApbClientePremium, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6))
+                    .addComponent(jBtnApbIncluir)
+                    .addComponent(jBtnApbAlterar)
+                    .addComponent(jBtnApbExcluir)
+                    .addComponent(jBtnApbConfirmar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jBtnApbPesquisar)
+                    .addComponent(jBtnApbCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(122, 122, 122))
         );
 
@@ -343,6 +430,36 @@ public class JDlgApbClientes extends javax.swing.JDialog {
     private void jFmtApbCepActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFmtApbCepActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jFmtApbCepActionPerformed
+
+    private void jBtnApbConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbConfirmarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnApbConfirmarActionPerformed
+
+    private void jBtnApbIncluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbIncluirActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnApbIncluirActionPerformed
+
+    private void jBtnApbAlterarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbAlterarActionPerformed
+        // TODO add your handling code here:
+        habilitar();
+    }//GEN-LAST:event_jBtnApbAlterarActionPerformed
+
+    private void jBtnApbExcluirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbExcluirActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showConfirmDialog(null, "Confirmar exclusão?", "selecione", JOptionPane.YES_NO_OPTION);
+    }//GEN-LAST:event_jBtnApbExcluirActionPerformed
+
+    private void jBtnApbCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbCancelarActionPerformed
+        // TODO add your handling code here:
+        desabilitar();
+    }//GEN-LAST:event_jBtnApbCancelarActionPerformed
+
+    private void jBtnApbPesquisarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnApbPesquisarActionPerformed
+        // TODO add your handling code here:
+        JOptionPane.showInputDialog(null,"Entre com o codigo");
+    }//GEN-LAST:event_jBtnApbPesquisarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -387,18 +504,19 @@ public class JDlgApbClientes extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jBtnApbAlterar;
+    private javax.swing.JButton jBtnApbCancelar;
+    private javax.swing.JButton jBtnApbConfirmar;
+    private javax.swing.JButton jBtnApbExcluir;
+    private javax.swing.JButton jBtnApbIncluir;
+    private javax.swing.JButton jBtnApbPesquisar;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jCboApbGenero;
     private javax.swing.JFormattedTextField jFmtApbCep;
     private javax.swing.JFormattedTextField jFmtApbCpf;
     private javax.swing.JFormattedTextField jFmtApbDataCadastro;
     private javax.swing.JFormattedTextField jFmtApbDataNascimento;
-    private javax.swing.JFormattedTextField jFmtApbLimiteLimiteCredito;
+    private javax.swing.JFormattedTextField jFmtApbLimiteCredito;
     private javax.swing.JFormattedTextField jFmtApbUltimoLogin;
     private javax.swing.JLabel jLbAPbDataNascimento;
     private javax.swing.JLabel jLbApbCep;
