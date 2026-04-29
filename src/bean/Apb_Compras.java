@@ -9,5 +9,5 @@ package bean;
  * @author u11174571179
  */
 public class Apb_Compras {
-    
+    public 
 }
