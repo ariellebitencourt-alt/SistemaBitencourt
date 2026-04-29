@@ -42,7 +42,9 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMnuApbSair = new javax.swing.JMenuItem();
         jMnuApbMovimentos = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -117,15 +119,17 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMenuItem2.setText("Compras");
         jMnuApbMovimentos.add(jMenuItem2);
 
-        jMenuItem3.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_P, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMenuItem3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/produto.png"))); // NOI18N
-        jMenuItem3.setText("Produtos");
-        jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem3ActionPerformed(evt);
-            }
-        });
-        jMnuApbMovimentos.add(jMenuItem3);
+        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMenuItem4.setText("compras_produtos");
+        jMnuApbMovimentos.add(jMenuItem4);
+
+        jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem5.setText("Vendas");
+        jMnuApbMovimentos.add(jMenuItem5);
+
+        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK));
+        jMenuItem6.setText("Vendas_Produtos");
+        jMnuApbMovimentos.add(jMenuItem6);
 
         jMenuBar2.add(jMnuApbMovimentos);
 
@@ -144,10 +148,6 @@ public class JFrmApbMenu extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMnuApbSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMnuApbSairActionPerformed
         // TODO add your handling code here:
@@ -223,7 +223,9 @@ public class JFrmApbMenu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMnuApbClientes;
     private javax.swing.JMenuItem jMnuApbFornecedor;
     private javax.swing.JMenu jMnuApbMovimentos;
