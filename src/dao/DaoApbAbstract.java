@@ -8,7 +8,7 @@ package dao;
  *
  * @author u11174571179
  */
-public abstract class DaoAbstract {
+public abstract class DaoApbAbstract {
     public abstract void insert(Object object);
     public abstract void update(Object object);
     public abstract void delete(Object object);

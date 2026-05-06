@@ -4,9 +4,9 @@
  */
 package bean;
 
-import java.math.BigDecimal;
+
 import java.util.Date;
-import jdk.jfr.Timestamp;
+
 
 /**
  *
@@ -22,11 +22,11 @@ public class Apb_Clientes {
     private Date ApbDataNascimento;
     private String ApbCidade;
     private String ApbCep;
-    private Timestamp ApbUltimoLogin;
+    private Date ApbUltimoLogin;
     private Date ApbDataCadasto;
     private Double ApbLimiteCredito;
     private String ApbGenero;
-    private Boolean ApbClientePremium;
+    private Date ApbClientePremium;
 
     /**
      * @return the ApbIdCliente
@@ -157,14 +157,14 @@ public class Apb_Clientes {
     /**
      * @return the ApbUltimoLogin
      */
-    public Timestamp getApbUltimoLogin() {
+    public Date getApbUltimoLogin() {
         return ApbUltimoLogin;
     }
 
     /**
      * @param ApbUltimoLogin the ApbUltimoLogin to set
      */
-    public void setApbUltimoLogin(Timestamp ApbUltimoLogin) {
+    public void setApbUltimoLogin(Date ApbUltimoLogin) {
         this.ApbUltimoLogin = ApbUltimoLogin;
     }
 
@@ -192,7 +192,7 @@ public class Apb_Clientes {
     /**
      * @param ApbLimiteCredito the ApbLimiteCredito to set
      */
-    public void setApbLimiteCredito(BigDecimal ApbLimiteCredito) {
+    public void setApbLimiteCredito(Double ApbLimiteCredito) {
         this.ApbLimiteCredito = ApbLimiteCredito;
     }
 
@@ -213,14 +213,14 @@ public class Apb_Clientes {
     /**
      * @return the ApbClientePremium
      */
-    public Boolean getApbClientePremium() {
+    public Date getApbClientePremium() {
         return ApbClientePremium;
     }
 
     /**
      * @param ApbClientePremium the ApbClientePremium to set
      */
-    public void setApbClientePremium(Boolean ApbClientePremium) {
+    public void setApbClientePremium(Date ApbClientePremium) {
         this.ApbClientePremium = ApbClientePremium;
     }
 }

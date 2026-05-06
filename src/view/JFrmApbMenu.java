@@ -15,6 +15,8 @@ public class JFrmApbMenu extends javax.swing.JFrame {
      */
     public JFrmApbMenu() {
         initComponents();
+        setTitle("Loja de celular");
+        setExtendedState(MAXIMIZED_BOTH);
     }
 
     /**
@@ -143,7 +145,7 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 207, Short.MAX_VALUE)
         );
 
         pack();
