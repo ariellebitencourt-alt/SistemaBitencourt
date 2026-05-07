@@ -17,7 +17,7 @@ public class JFrmApbLogin extends javax.swing.JFrame {
      */
     public JFrmApbLogin() {
         initComponents();
-        setTitle("Login");
+        setTitle("Faça o Login");
         jPwfApbSenha.setText("");
     }
 

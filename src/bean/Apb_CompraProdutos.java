@@ -9,10 +9,10 @@ package bean;
  * @author u11174571179
  */
 public class Apb_CompraProdutos {
-    private int ApbCompraProdutos;
-    private int ApbCompra;
-    private int ApbProduto;
-    private int ApbQuantidade;
+    private int ApbIdCompraProdutos;
+    private int ApbIdCompra;
+    private int ApbIdProduto;
+    private int ApbIdQuantidade;
     private Double ApbValorUnitario;
     private Double ApbDesconto;
     private Double ApbTotalItem;
@@ -20,57 +20,57 @@ public class Apb_CompraProdutos {
     /**
      * @return the ApbCompraProdutos
      */
-    public int getApbCompraProdutos() {
-        return ApbCompraProdutos;
+    public int getApbIdCompraProdutos() {
+        return ApbIdCompraProdutos;
     }
 
     /**
      * @param ApbCompraProdutos the ApbCompraProdutos to set
      */
-    public void setApbCompraProdutos(int ApbCompraProdutos) {
-        this.ApbCompraProdutos = ApbCompraProdutos;
+    public void setApbCompraProdutos(int ApbIdCompraProdutos) {
+        this.ApbIdCompraProdutos = ApbIdCompraProdutos;
     }
 
     /**
      * @return the ApbCompra
      */
-    public int getApbCompra() {
-        return ApbCompra;
+    public int getApbIdCompra() {
+        return ApbIdCompra;
     }
 
     /**
-     * @param ApbCompra the ApbCompra to set
+     * @param ApbIdCompra the ApbCompra to set
      */
-    public void setApbCompra(int ApbCompra) {
-        this.ApbCompra = ApbCompra;
+    public void setApbIdCompra(int ApbIdCompra) {
+        this.ApbIdCompra = ApbIdCompra;
     }
 
     /**
      * @return the ApbProduto
      */
-    public int getApbProduto() {
-        return ApbProduto;
+    public int getApbIdProduto() {
+        return ApbIdProduto;
     }
 
     /**
-     * @param ApbProduto the ApbProduto to set
+     * @param ApbIdProduto the ApbProduto to set
      */
-    public void setApbProduto(int ApbProduto) {
-        this.ApbProduto = ApbProduto;
+    public void setApbIdProduto(int ApbIdProduto) {
+        this.ApbIdProduto = ApbIdProduto;
     }
 
     /**
      * @return the ApbQuantidade
      */
-    public int getApbQuantidade() {
-        return ApbQuantidade;
+    public int getApbIdQuantidade() {
+        return ApbIdQuantidade;
     }
 
     /**
-     * @param ApbQuantidade the ApbQuantidade to set
+     * @param ApbIdQuantidade the ApbQuantidade to set
      */
-    public void setApbQuantidade(int ApbQuantidade) {
-        this.ApbQuantidade = ApbQuantidade;
+    public void setApbidQuantidade(int ApbIdQuantidade) {
+        this.ApbIdQuantidade = ApbIdQuantidade;
     }
 
     /**

@@ -44,16 +44,14 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMnuApbSair = new javax.swing.JMenuItem();
         jMnuApbMovimentos = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
-        jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-        jMenuItem6 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jMnuApbProdutos.setText("Cadastro");
 
         jMnuApbUsuarios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_U, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuApbUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuApbUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/People.png"))); // NOI18N
         jMnuApbUsuarios.setText("Usuarios");
         jMnuApbUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,7 +71,7 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMnuApbProdutos.add(jMnuApbClientes);
 
         jMnuApbFornecedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_F, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuApbFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/grupo.png"))); // NOI18N
+        jMnuApbFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Male.png"))); // NOI18N
         jMnuApbFornecedor.setText("Fornedor");
         jMnuApbFornecedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,7 +81,7 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMnuApbProdutos.add(jMnuApbFornecedor);
 
         jMnuApbVendedor.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        jMnuApbVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/usuario.png"))); // NOI18N
+        jMnuApbVendedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Boss.png"))); // NOI18N
         jMnuApbVendedor.setText("Vendedor");
         jMnuApbVendedor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,20 +116,14 @@ public class JFrmApbMenu extends javax.swing.JFrame {
         jMnuApbMovimentos.setText("Movimentos");
 
         jMenuItem2.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Shopping cart.png"))); // NOI18N
         jMenuItem2.setText("Compras");
         jMnuApbMovimentos.add(jMenuItem2);
 
-        jMenuItem4.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem4.setText("compras_produtos");
-        jMnuApbMovimentos.add(jMenuItem4);
-
         jMenuItem5.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
+        jMenuItem5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagens/Dollar.png"))); // NOI18N
         jMenuItem5.setText("Vendas");
         jMnuApbMovimentos.add(jMenuItem5);
-
-        jMenuItem6.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_V, java.awt.event.InputEvent.ALT_DOWN_MASK));
-        jMenuItem6.setText("Vendas_Produtos");
-        jMnuApbMovimentos.add(jMenuItem6);
 
         jMenuBar2.add(jMnuApbMovimentos);
 
@@ -225,9 +217,7 @@ public class JFrmApbMenu extends javax.swing.JFrame {
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
-    private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JMenuItem jMnuApbClientes;
     private javax.swing.JMenuItem jMnuApbFornecedor;
     private javax.swing.JMenu jMnuApbMovimentos;

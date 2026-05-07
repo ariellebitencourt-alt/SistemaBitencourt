@@ -14,7 +14,7 @@ public class Apb_Vendas {
     private int ApbIdVendas;
     private int ApbIdclientes;
     private int ApbIdProdutos;
-    private Date ApbdataVenda;
+    private Date ApbDataVenda;
     private int ApbQuantidade;
     private Double ApbValorUnitario;
     private Double ApbValorTotal;
@@ -65,15 +65,15 @@ public class Apb_Vendas {
     /**
      * @return the ApbdataVenda
      */
-    public Date getApbdataVenda() {
-        return ApbdataVenda;
+    public Date getApbDataVenda() {
+        return ApbDataVenda;
     }
 
     /**
-     * @param ApbdataVenda the ApbdataVenda to set
+     * @param ApbDataVenda the ApbdataVenda to set
      */
-    public void setApbdataVenda(Date ApbdataVenda) {
-        this.ApbdataVenda = ApbdataVenda;
+    public void setApbDataVenda(Date ApbDataVenda) {
+        this.ApbDataVenda = ApbDataVenda;
     }
 
     /**

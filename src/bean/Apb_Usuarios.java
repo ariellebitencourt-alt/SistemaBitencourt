@@ -11,8 +11,9 @@ import java.util.Date;
  * @author u11174571179
  */
 public class Apb_Usuarios {
-    private String ApbIdUsuarios;
+    private int ApbIdUsuarios;
     private String ApbNome;
+    private String ApbApelido;
     private String ApbCpf;
     private Date ApbDataNascimento;
     private String ApbNivel;
@@ -22,14 +23,14 @@ public class Apb_Usuarios {
     /**
      * @return the ApbIdUsuarios
      */
-    public String getApbIdUsuarios() {
+    public int getApbIdUsuarios() {
         return ApbIdUsuarios;
     }
 
     /**
      * @param ApbIdUsuarios the ApbIdUsuarios to set
      */
-    public void setApbIdUsuarios(String ApbIdUsuarios) {
+    public void setApbIdUsuarios(int ApbIdUsuarios) {
         this.ApbIdUsuarios = ApbIdUsuarios;
     }
 
@@ -46,6 +47,18 @@ public class Apb_Usuarios {
     public void setApbNome(String ApbNome) {
         this.ApbNome = ApbNome;
     }
+    
+      public String getApbApelido() {
+        return ApbApelido;
+    }
+
+    /**
+     * @param ApbApelido the ApbAtivo to set
+     */
+    public void setApbApelido(String ApbApelido) {
+        this.ApbApelido = ApbApelido;
+    }
+
 
     /**
      * @return the ApbCpf

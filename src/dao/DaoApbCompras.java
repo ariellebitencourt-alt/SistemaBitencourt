@@ -24,14 +24,14 @@ public class DaoApbCompras extends DaoApbAbstract{
           try {
              Class.forName("com.mysql.jdbc.Driver");
                      String url, user, password;
-                     url ="jdbc:mysql://10.7.0.51:33062/db_marcos_vilhanueva";
+                     url ="jdbc:mysql://10.7.0.51:33062/db_arielle_bitencourt";
                      user ="marcos_vilhanueva";
-                     password ="marcos_vilhanueva";
+                     password ="arielle_bitencourt";
 
                      Connection cnt;
                      cnt = DriverManager.getConnection(url, user, password);
                              
-                String sql= "insert into mpv_usuarios values(?,?,?,?,?,?,?,?)";                
+                String sql= "insert into apb_compras values(?,?,?,?,?,?,?,?)";                
               PreparedStatement pst = cnt.prepareStatement(sql);
               pst.setInt(2, apb_Compras.getApbIdCompras());
               pst.setInt(2, apb_Compras.getApbIdFornecedor());

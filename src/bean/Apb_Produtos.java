@@ -9,7 +9,7 @@ package bean;
  * @author u11174571179
  */
 public class Apb_Produtos {
-    private String ApbIdProdutos;
+    private int ApbIdProdutos;
     private String ApbNomeProduto;
     private String ApbMarca;
     private String ApbModelo;
@@ -20,14 +20,14 @@ public class Apb_Produtos {
     /**
      * @return the ApbIdProdutos
      */
-    public String getApbIdProdutos() {
+    public int getApbIdProdutos() {
         return ApbIdProdutos;
     }
 
     /**
      * @param ApbIdProdutos the ApbIdProdutos to set
      */
-    public void setApbIdProdutos(String ApbIdProdutos) {
+    public void setApbIdProdutos(int ApbIdProdutos) {
         this.ApbIdProdutos = ApbIdProdutos;
     }
 

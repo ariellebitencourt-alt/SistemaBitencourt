@@ -16,6 +16,7 @@ public class Apb_VendaProdutos {
     private Double ApbValorUnitario;
     private Double ApbDesconto;
     private Double ApbTotalItem;
+    private String ApbAtivo;
 
     /**
      * @return the ApbIdVendasProdutos
@@ -113,5 +114,16 @@ public class Apb_VendaProdutos {
      */
     public void setApbTotalItem(Double ApbTotalItem) {
         this.ApbTotalItem = ApbTotalItem;
+    }
+
+ public String getApbAtivo() {
+        return ApbAtivo;
+    }
+
+    /**
+     * @param ApbAtivo the ApbAtivo to set
+     */
+    public void setApbAtivo(String ApbAtivo) {
+        this.ApbAtivo = ApbAtivo;
     }
 }
